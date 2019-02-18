@@ -1,0 +1,10 @@
+<?php $bannerId = $this->getBannerId() ?>
+<?php $banner = $this->getBannerById($bannerId) ?>
+
+<div class="banner">	
+	<?php if ($banner->getContent()): ?>
+		<div class="text-center">
+				<div class="banner-text"><?php echo $banner->getContent() ?></div>			
+		</div>
+	<?php endif ?>
+</div>

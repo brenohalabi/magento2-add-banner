@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+		<add id="Breno_Banner::banner" title="Banner" module="Breno_Banner" sortOrder="150" resource="Breno_Banner::banner"/>
+		
+		<add id="Breno_Banner::manage" title="Manage Banners" module="Breno_Banner" sortOrder="10" parent="Breno_Banner::banner" action="adminhtml/brenobanner/edit/id/1" resource="Breno_Banner::manage"/>
+    </menu>
+</config>

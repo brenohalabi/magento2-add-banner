@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">    
+    <body>
+        <referenceContainer name="header.container">
+            <container name="home-navigation-container" htmlTag="div" htmlClass="home-navigation-container" after="-">
+                <container name="home-navigation-wrapper" htmlTag="div" htmlClass="home-navigation-wrapper">
+                    <block ifconfig="breno_banner/general/active" class="Magento\Cms\Block\Block" name="cms_breno_banner">
+                        <arguments>
+                            <argument name="block_id" xsi:type="string">cms_breno_banner</argument>
+                        </arguments>
+                    </block>
+                </container>
+            </container>
+        </referenceContainer>
+    </body>
+</page>
